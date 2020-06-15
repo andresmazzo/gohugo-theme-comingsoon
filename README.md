@@ -27,6 +27,13 @@ Take a look inside the examples/ folder of this theme. You'll find multiple site
 
 You may need to delete the line: themesDir = "../.."
 
+### Development
+
+To update the submodule:
+```
+git submodule update --recursive --remote
+```
+
 ### Contributing
 
 If you find a bug or have an idea for a feature, feel free to use the [issue tracker](/https://github.com/andresmazzo/gohugo-theme-comingsoon) to let me know.
