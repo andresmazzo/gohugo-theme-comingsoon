@@ -14,6 +14,9 @@
 
 
     <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+    {{ $tmpl := printf "css/templates/%s.css" .Site.Params.template }}
+    <link rel="stylesheet" href="{{ $tmpl | absURL }}">
+
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ relURL (.) }}">
     {{ end }}

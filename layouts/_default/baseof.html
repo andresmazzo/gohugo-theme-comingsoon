@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
     <body>
-        {{ $template_index := 'templates/' .Param "template"}}
-        {{- partial $template_index . -}}
+        {{ $tmpl := printf "templates/%s/index.html" .Site.Params.template }}
+        {{ partial $tmpl}}
     </body>
 </html>
