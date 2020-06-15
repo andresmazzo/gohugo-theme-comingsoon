@@ -1,0 +1,5 @@
+title = "My New Cool Project"
+baseURL = "https://example.com"
+languageCode = "en-us"
+theme = "gohugo-theme-comingsoon"
+themesDir = "../../.."
