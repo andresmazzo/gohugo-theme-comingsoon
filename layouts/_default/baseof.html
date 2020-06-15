@@ -2,10 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
+        {{ $template_index := 'templates/' .Param "template"}}
+        {{- partial $template_index . -}}
     </body>
 </html>

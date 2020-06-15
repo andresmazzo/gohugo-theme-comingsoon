@@ -1,10 +1,16 @@
+@font-face {
+  font-family: worksans-regular;
+  src: url(../fonts/WOFF/WorkSans-Regular.woff);
+}
+
 
 html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
 
-    font-family: "Courier";
+    /*font-family: "Courier";*/
+     font-family: worksans-regular;
 }
 
 

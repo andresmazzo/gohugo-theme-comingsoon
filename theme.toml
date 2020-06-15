@@ -1,21 +1,15 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Comingsoon Simple"
-license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
-min_version = "0.41.0"
+name = "Comingsoon Gohugo Theme"
+license = "GPL3"
+licenselink = "https://github.com/andresmazzo/gohugo-theme-comingsoon/blob/master/LICENSE"
+description = "A base theme for coming soon webpages"
+homepage = "https://github.com/andresmazzo/gohugo-theme-comingsoon"
+tags = ["cominsoon"]
+features = ["singlepage"]
+min_version = "0.1.0"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Andres Mazzo"
+  homepage = "https://andresmazzo.com"
