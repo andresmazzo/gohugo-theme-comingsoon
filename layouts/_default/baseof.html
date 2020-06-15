@@ -2,7 +2,8 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
     <body>
-        {{ $tmpl := printf "templates/%s/index.html" .Site.Params.template }}
-        {{ partial $tmpl}}
+        <div id="content">
+          {{- block "main" . }}{{- end }}
+        </div>
     </body>
 </html>

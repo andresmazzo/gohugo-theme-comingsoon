@@ -34,6 +34,22 @@ To update the submodule:
 git submodule update --recursive --remote
 ```
 
+Create a new template with two files.
+Create html dir:
+```
+cd layouts/partials/templates
+mkdir your-template-name
+cd your-template-name
+vim index.html
+```
+
+Create css file:
+```
+cd static/css/templates
+vim your-template-name.css
+```
+
+
 ### Contributing
 
 If you find a bug or have an idea for a feature, feel free to use the [issue tracker](/https://github.com/andresmazzo/gohugo-theme-comingsoon) to let me know.
