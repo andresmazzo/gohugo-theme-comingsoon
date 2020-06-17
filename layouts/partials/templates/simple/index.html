@@ -6,7 +6,10 @@
     <header class="homepage-header">
       <h1>{{.Title}}</h1>
       {{ with .Params.subtitle }}
-      <h4 class="subtitle">{{.}}</h4>
+        <h4 class="subtitle">{{.}}</h4>
+      {{ end }}
+      {{ if .Params.countdown_timer }}
+        {{ partial "templates/simple/countdown.html" .Site.Params.launch_date }}
       {{ end }}
     </header>
 
