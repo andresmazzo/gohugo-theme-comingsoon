@@ -9,13 +9,23 @@
     <img class="logo" src="{{ .Site.Params.logo | absURL }}" />
     <div class="centered">
       <div class="texts">
-        {{ with .Params.subtitle }}
-          <h4 class="subtitle">{{.}}</h4>
+        {{ with .Params.caption }}
+          <p class="caption">{{.}}</p>
         {{ end }}
         <h1>{{.Title}}</h1>
-        {{ with .Params.description }}
-          <p class="description">{{.}}</p>
+        {{ with .Params.subtitle }}
+          <p class="subtitle">{{.}}</p>
         {{ end }}
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <div class="social-medias">
+        ..
+      </div>
+      <div class="contact-vias">
+        <span><strong>Phone:</strong> {{ .Site.Params.phone }}</span>
+        <span><strong>E-mail:</strong> {{ .Site.Params.mail }}</span>
       </div>
     </div>
   </div>

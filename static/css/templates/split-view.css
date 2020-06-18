@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h4 {
@@ -85,6 +85,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: flex;
 }
 
 .left .countdown-timer {
@@ -98,18 +99,16 @@ p {
   padding: 5rem 0;
 }
 
-.right .texts {
-}
-
-.right .subtitle {
+.right .caption {
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .right .title {
 
 }
 
-.right .description {
+.right .subtitle {
   opacity: 0.7;
 }
 

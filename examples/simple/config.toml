@@ -6,4 +6,7 @@ themesDir = "../../.."
 
 [params]
   template = "simple"
+  logo = "images/logo.png"
   launch_date = "2021-01-01T00:00:00Z"
+  phone = "11 1234-5678"
+  mail = "admin@andresmazzo.com"
