@@ -29,12 +29,12 @@ You may need to delete the line: themesDir = "../.."
 
 ### Development
 
-To update the submodule:
+**Update git submodule**
 ```
 git submodule update --recursive --remote
 ```
 
-Create a new template with two files.
+**Create template from scratch**
 Create html dir:
 ```
 cd layouts/partials/templates
@@ -47,6 +47,13 @@ Create css file:
 ```
 cd static/css/templates
 vim your-template-name.css
+```
+
+**Create template based on other**
+Copy template
+```
+cp -a layouts/partials/simple layouts/partials/awesome
+cp static/css/templates/simple.css static/css/templates/awesome.css
 ```
 
 
