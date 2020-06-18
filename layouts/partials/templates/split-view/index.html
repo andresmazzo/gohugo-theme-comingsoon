@@ -1,18 +1,22 @@
 <div>
-  <div class="left-content">
+  <div class="split left">
     <img class="background" src="{{ .Params.image | absURL }}" />
-    {{ partial "templates/split-view/countdown.html" .Site.Params.launch_date }}
+    <div class="centered">
+      {{ partial "templates/split-view/countdown.html" .Site.Params.launch_date }}
+    </div>
   </div>
-  <div class="right-content">
+  <div class="split right">
     <img class="logo" src="{{ .Site.Params.logo | absURL }}" />
-    <div class="texts">
-      {{ with .Params.subtitle }}
-        <h4 class="subtitle">{{.}}</h4>
-      {{ end }}
-      <h1>{{.Title}}</h1>
-      {{ with .Params.description }}
-        <p class="description">{{.}}</p>
-      {{ end }}
+    <div class="centered">
+      <div class="texts">
+        {{ with .Params.subtitle }}
+          <h4 class="subtitle">{{.}}</h4>
+        {{ end }}
+        <h1>{{.Title}}</h1>
+        {{ with .Params.description }}
+          <p class="description">{{.}}</p>
+        {{ end }}
+      </div>
     </div>
   </div>
 </div>
