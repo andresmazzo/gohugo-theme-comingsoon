@@ -23,14 +23,7 @@ body {
 
 h1 {
     font-size: 3rem;
-}
-
-h4 {
-    font-size: 1.7rem;
-}
-
-h5 {
-    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
 p {
@@ -101,17 +94,28 @@ p {
 
 .right .caption {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .right .title {
-
+  margin-top: 0.5rem;
 }
 
 .right .subtitle {
   opacity: 0.7;
 }
 
+.right .contact-box {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  opacity: 0.8;
+}
+.right .contact-box .via {
+  padding: 0 0.5rem;
+}
 
 /* --- Countdown Timer --- */
 .countdown-timer .timebox-container {
