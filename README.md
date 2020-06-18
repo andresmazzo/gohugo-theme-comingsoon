@@ -52,7 +52,7 @@ vim your-template-name.css
 **Create template based on other**
 Copy template
 ```
-cp -a layouts/partials/simple layouts/partials/awesome
+cp -a layouts/partials/templates/simple layouts/partials/templates/awesome
 cp static/css/templates/simple.css static/css/templates/awesome.css
 ```
 

@@ -1,0 +1,9 @@
+
+{{ $date := time . }}
+
+<div class="countdown-timer" data-launch-date="{{ $date.Unix }}">
+  {{ partial "templates/split-view/timebox.html" (dict "unit" "days" "number" "00") }}
+  {{ partial "templates/split-view/timebox.html" (dict "unit" "hours" "number" "00") }}
+  {{ partial "templates/split-view/timebox.html" (dict "unit" "minutes" "number" "00") }}
+  {{ partial "templates/split-view/timebox.html" (dict "unit" "seconds" "number" "00") }}
+</div>

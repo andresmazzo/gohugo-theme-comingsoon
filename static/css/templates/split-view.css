@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+
+    /*font-family: "Courier";*/
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+body {
+  background-color: #eee;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.left-content {
+  
+}
+
+.right-content {
+  text-align: center;
+  color: #444;
+}
+
+.left-content .background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-content .countdown-timer {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.right-content .logo {
+  width: 30%;
+}
+
+.right-content .texts {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.right-content .subtitle {
+  text-transform: uppercase;
+}
+
+.right-content .title {
+
+}
+
+.right-content .description {
+  opacity: 0.7;
+}
+
+
+/* --- Countdown Timer --- */
+.countdown-timer .timebox-container {
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+}
+.countdown-timer .timebox-container .timebox-number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.countdown-timer .timebox-container .timebox-unit {
+  font-size: 1rem;
+  opacity: 0.7;
+}
