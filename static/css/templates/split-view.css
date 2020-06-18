@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+:root {
+  --main-color: #1d771d;
+  --secondary-color: #eee;
+  --text-color: #444;
+}
 
 html, body {
     margin: 0;
@@ -12,7 +17,8 @@ html, body {
 
 
 body {
-  background-color: #eee;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 h1 {
@@ -46,13 +52,14 @@ p {
 /* Control the left side */
 .left {
   left: 0;
-  background-color: #111;
+  background-color: var(--main-color);
+  color: #fff;
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: red;
+  background-color: var(--secondary-color);
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -65,9 +72,13 @@ p {
 }
 
 
+/* My styles */
+.left .centered, .right .centered {
+  width: 90%;
+}
+
 .right {
   text-align: center;
-  color: #444;
 }
 
 .left .background {
@@ -84,12 +95,10 @@ p {
 
 .right .logo {
   width: 30%;
+  padding: 5rem 0;
 }
 
 .right .texts {
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
 }
 
 .right .subtitle {
@@ -109,7 +118,6 @@ p {
 .countdown-timer .timebox-container {
   display: inline-block;
   padding: 1rem;
-  color: #fff;
 }
 .countdown-timer .timebox-container .timebox-number {
   font-size: 3rem;
@@ -117,5 +125,5 @@ p {
 }
 .countdown-timer .timebox-container .timebox-unit {
   font-size: 1rem;
-  opacity: 0.7;
+  font-weight: bold;
 }
