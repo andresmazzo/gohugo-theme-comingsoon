@@ -46,14 +46,18 @@ vim index.html
 Create css file:
 ```
 cd static/css/templates
-vim your-template-name.css
+mkdir your-template-name
+cd your-template-name
+vim main.css
+...
+vim variables.css
 ```
 
 **Create template based on other**
 Copy template
 ```
 cp -a layouts/partials/templates/simple layouts/partials/templates/awesome
-cp static/css/templates/simple.css static/css/templates/awesome.css
+cp -a static/css/templates/simple static/css/templates/awesome
 ```
 
 
