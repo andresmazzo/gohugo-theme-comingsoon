@@ -18,7 +18,19 @@ h5 {
     font-size: 1.2rem;
 }
 
+/* --- Components Overrides | Countdown --- */
+.countdown-timer .timebox-container  {
+  text-align: center;
+}
+.countdown-timer .timebox-container .timebox-number {
+  font-size: 5rem;
+  font-weight: normal;
+}
 /* --- Components Overrides | Subscription --- */
+.subscription-container {
+  margin: 1rem 0 2rem;
+}
+
 .subscription-container input {
   border: 1px solid #fff;
   color: #fff;
