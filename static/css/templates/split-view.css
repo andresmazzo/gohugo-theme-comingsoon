@@ -7,10 +7,6 @@
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-
     /*font-family: "Courier";*/
     font-family: 'Work Sans', sans-serif;
 }
@@ -53,15 +49,6 @@ p {
 .right {
   right: 0;
   background-color: var(--secondary-color);
-}
-
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 
@@ -118,15 +105,7 @@ p {
 }
 
 /* --- Countdown Timer --- */
-.countdown-timer .timebox-container {
-  display: inline-block;
-  padding: 1rem;
-}
-.countdown-timer .timebox-container .timebox-number {
-  font-size: 3rem;
-  font-weight: bold;
-}
 .countdown-timer .timebox-container .timebox-unit {
-  font-size: 1rem;
   font-weight: bold;
+  opacity: 1;
 }

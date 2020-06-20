@@ -9,7 +9,7 @@
       <caption>{{.Params.caption}}</caption>
       <h1>{{.Title}}</h1>
       {{ if .Params.countdown_timer }}
-        {{ partial "templates/simple/countdown.html" .Site.Params.launch_date }}
+        {{ partial "components/countdown/countdown.html" .Site.Params.launch_date }}
       {{ end }}
       <div class="content">
         {{.Content}}

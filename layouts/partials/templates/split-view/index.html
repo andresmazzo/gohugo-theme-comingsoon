@@ -2,7 +2,7 @@
   <div class="split left">
     <img class="background" src="{{ .Params.image | absURL }}" />
     <div class="centered">
-      {{ partial "templates/split-view/countdown.html" .Site.Params.launch_date }}
+      {{ partial "components/countdown/countdown.html" .Site.Params.launch_date }}
     </div>
   </div>
   <div class="split right">
