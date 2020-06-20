@@ -6,7 +6,7 @@
     </header>
 
     <div class="center-container">
-      <caption>{{.Params.caption}}</caption>
+      <span class="caption">{{.Params.caption}}</caption>
       <h1>{{.Title}}</h1>
       {{ if .Params.countdown_timer }}
         {{ partial "components/countdown/countdown.html" .Site.Params.launch_date }}
