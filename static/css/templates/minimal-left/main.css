@@ -10,12 +10,8 @@ h1 {
     margin-bottom: 1.2rem;
 }
 
-h4 {
-    font-size: 1.7rem;
-}
-
-h5 {
-    font-size: 1.2rem;
+.caption {
+  font-weight: bold;
 }
 
 /* --- Components Overrides | Countdown --- */
