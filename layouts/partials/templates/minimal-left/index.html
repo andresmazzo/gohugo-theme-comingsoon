@@ -11,6 +11,9 @@
       {{ if .Params.countdown_timer }}
         {{ partial "components/countdown/countdown.html" .Site.Params.launch_date }}
       {{ end }}
+      {{ if .Params.subscription }}
+        {{ partial "components/subscription/subscription.html" (dict "mail" .Site.Params.mail "button" "Suscribite!" ) }}
+      {{ end }}
       <div class="content">
         {{.Content}}
       </div>
