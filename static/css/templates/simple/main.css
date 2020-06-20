@@ -1,8 +1,12 @@
 
+/* --- Main Global Overrides --- */
 main {
   text-align: center;
 }
 
+/* --- Components Overrides | Countdown Timer --- */
+
+/* --- Custom styles --- */
 .image {
   display: flex;
   margin: 3rem auto;
