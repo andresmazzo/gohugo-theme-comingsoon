@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root {
+  --main-color: #1d771d;
+  --secondary-color: #eee;
+  --text-color: #444;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+
+    /*font-family: "Courier";*/
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+header .logo {
+  object-fit: contain;
+  height: 60px;
+}
+
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+
+.countdown-timer .timebox-container {
+  display: inline-block;
+  padding: 1rem;
+}
+.countdown-timer .timebox-container .timebox-number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.countdown-timer .timebox-container .timebox-unit {
+  font-size: 1rem;
+  opacity: 0.7;
+}

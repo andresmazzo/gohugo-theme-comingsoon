@@ -1,0 +1,18 @@
+<div class="container">
+    <header>
+      {{ if .Params.image }}
+        <img class="logo" src="{{ .Params.image | absURL }}" />
+      {{ end }}
+    </header>
+
+    <div class="center-container">
+      <caption>{{.Params.caption}}</caption>
+      <h1>{{.Title}}</h1>
+      {{ if .Params.countdown_timer }}
+        {{ partial "templates/simple/countdown.html" .Site.Params.launch_date }}
+      {{ end }}
+      <div class="content">
+        {{.Content}}
+      </div>
+    </div>
+</div>
