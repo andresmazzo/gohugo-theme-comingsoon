@@ -1,29 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
-:root {
-  --main-color: #1d771d;
-  --secondary-color: #eee;
-  --text-color: #444;
-}
-
-html, body {
-    /*font-family: "Courier";*/
-    font-family: 'Work Sans', sans-serif;
-}
-
-
-body {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-}
-
+/* Main Global Overrides */
 h1 {
     font-size: 3rem;
     margin: 1rem 0;
 }
 
-p {
-    font-size: 1.1rem;
+/* --- Components Overrides | Countdown Timer --- */
+.countdown-timer .timebox-container .timebox-unit {
+  font-weight: bold;
+  opacity: 1;
 }
 
 /* Thanks and reference to: https://www.w3schools.com/howto/howto_css_split_screen.asp */
@@ -52,7 +37,7 @@ p {
 }
 
 
-/* My styles */
+/* --- My styles --- */
 .left .centered, .right .centered {
   width: 90%;
 }
@@ -102,10 +87,4 @@ p {
 }
 .right .contact-box .via {
   padding: 0 0.5rem;
-}
-
-/* --- Countdown Timer --- */
-.countdown-timer .timebox-container .timebox-unit {
-  font-weight: bold;
-  opacity: 1;
 }
