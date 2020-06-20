@@ -14,7 +14,10 @@
 
 
     {{ $tmpl := printf "css/templates/%s/variables.css" .Site.Params.template }}
+    <link rel="stylesheet" href="{{ $tmpl | absURL }}">
+
     <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+    
     {{ $tmpl := printf "css/templates/%s/main.css" .Site.Params.template }}
     <link rel="stylesheet" href="{{ $tmpl | absURL }}">
 
