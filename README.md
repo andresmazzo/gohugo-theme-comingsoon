@@ -33,6 +33,8 @@ You may need to delete the line: themesDir = "../.."
 - split-view
 - minimal-left
 
+See [screenshot pics](/docs/pics)!
+
 ### Custom CSS
 
 So, you define the template, but you would like to adjust some things. Don't worry. You can override the built-in css by using your own. 
@@ -40,8 +42,17 @@ Create your own files in `/static` dir of your website and edit config file.
 
 Example: Your css files are in `static/css/`:
 
-    [params]
-      custom_css = ["css/overrides.css"]
+```
+[params]
+  custom_css = ["css/overrides.css"]
+```
+
+### Subscription
+Do you know formspree.io? We support it to send the email of the subscription form. Visit the Formspree site to get the "action" link and add it to your config file.
+```
+[params]
+  subscription_action = "https://formspree.io/asdfgher"
+```
 
 ### Development
 
