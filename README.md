@@ -27,6 +27,13 @@ Take a look inside the examples/ folder of this theme. You'll find multiple site
 
 You may need to delete the line: themesDir = "../.."
 
+### Templates
+
+- simple
+- split-view
+- minimal-left
+
+
 ### Development
 
 **Update git submodule**
