@@ -1,6 +1,6 @@
 <div>
-    {{ if .Params.image }}
-      <img class="image" src="{{ .Params.image | absURL }}" />
+    {{ if .Site.Params.logo }}
+      <img class="logo" src="{{ .Site.Params.logo | absURL }}" />
     {{ end }}
 
     <header class="header">

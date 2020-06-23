@@ -1,4 +1,7 @@
 <div class="subscription-container">
-  <input type="text" placeholder="{{ .input_placeholder }}" />
-  <button>{{ .button }}</button>
+  <form action="{{ .Site.Params.subscription_action }}" method="POST">
+    <input type="text" name="mail" placeholder="{{ .input_placeholder }}">
+    <input type="email" name="_replyto">
+    <input type="submit" value="{{ .button }}">
+  </form>
 </div>

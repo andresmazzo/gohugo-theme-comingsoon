@@ -1,8 +1,7 @@
 {{ define "main" }}
     <main aria-role="main">
-
-      {{ $tmpl := printf "templates/%s/index.html" .Site.Params.template }}
-      {{ partial $tmpl . }}
-
+      <div class="{{ .Site.Params.template }}_container">
+        {{ partial (printf "templates/%s/index.html" .Site.Params.template) . }}
+      </div>
     </main>
 {{ end }}
