@@ -1,10 +1,11 @@
 ## The Coming Soon GoHugo Theme
 
-This theme acts like a flexible coming soon theme to your next project.
+Welcome to the universal coming soon theme to your next project.
 
 #### Features
 - Flexible
 - Multiple templates
+- Countdown Timer
 - Subscription
 
 ### Installation
@@ -23,8 +24,7 @@ After installing the theme successfully it requires a just a few more steps to g
 
 **The config file**
 
-Take a look inside the examples/ folder of this theme. You'll find multiple site examples. Select one and see file called config.toml. To use it, copy the config.toml in the root folder of your Hugo site. Feel free to change the strings in this theme.
-
+Take a look inside the exampleSite/ folder. See `config.toml` file. To use it, copy it in the root folder of your Hugo site. Feel free to change the strings in this theme.
 You may need to delete the line: themesDir = "../.."
 
 ### Templates
@@ -33,40 +33,19 @@ You may need to delete the line: themesDir = "../.."
 - split-view
 - minimal-left
 
+### Custom CSS
+
+So, you define the template, but you would like to adjust some things. Don't worry. You can override the built-in css by using your own. 
+Create your own files in `/static` dir of your website and edit config file. 
+
+Example: Your css files are in `static/css/`:
+
+    [params]
+      custom_css = ["css/overrides.css"]
 
 ### Development
 
-**Update git submodule**
-```
-git submodule update --recursive --remote
-```
-
-**Create template from scratch**
-Create html dir:
-```
-cd layouts/partials/templates
-mkdir your-template-name
-cd your-template-name
-vim index.html
-```
-
-Create css file:
-```
-cd static/css/templates
-mkdir your-template-name
-cd your-template-name
-vim main.css
-...
-vim variables.css
-```
-
-**Create template based on other**
-Copy template
-```
-cp -a layouts/partials/templates/simple layouts/partials/templates/awesome
-cp -a static/css/templates/simple static/css/templates/awesome
-```
-
+See [docs dir](/docs) for more info.
 
 ### Contributing
 
