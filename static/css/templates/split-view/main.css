@@ -79,6 +79,9 @@ h1 {
   width: 100%;
   opacity: 0.8;
 }
+.right .contact-box .contact-vias {
+  margin-top: 2rem;
+}
 .right .contact-box .via {
   padding: 0 0.5rem;
 }

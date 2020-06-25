@@ -20,7 +20,8 @@
     </div>
 
     <div class="contact-box">
-      <div class="social-medias"></div>
+      {{ partial "components/socialbox.html" .Site.Params.socials }}
+
       <div class="contact-vias">
         <span class="via"><strong>Phone:</strong> {{ .Site.Params.phone }}</span>
         <span class="via"><strong>E-mail:</strong> {{ .Site.Params.mail }}</span>

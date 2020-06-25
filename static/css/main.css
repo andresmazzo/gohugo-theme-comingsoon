@@ -97,6 +97,10 @@ a:visited {
 }
 
 /* Social */
+.socialbox-container {
+  display: inline-block;
+}
+
 .socialbox-container a {
   display: inline-block;
   margin-right: 0.5rem;

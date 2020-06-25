@@ -9,9 +9,9 @@ main {
 /* --- Custom styles --- */
 .logo {
   display: flex;
-  margin: 3rem auto;
+  margin: 2rem auto;
   object-fit: contain;
-  height: 10rem;
+  height: 8rem;
 }
 
 .content {
