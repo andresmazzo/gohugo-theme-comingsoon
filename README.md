@@ -8,7 +8,7 @@ Welcome to the universal coming soon theme to your next project.
 - Countdown Timer
 - Subscription
 
-![Image of examples](/docs/pics/grid.png)
+![Image of examples](/images/grid.png)
 
 ### Installation
 
