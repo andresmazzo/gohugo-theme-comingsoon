@@ -6,7 +6,7 @@ license = "GPL3"
 licenselink = "https://github.com/andresmazzo/gohugo-theme-comingsoon/blob/master/LICENSE"
 description = "A base theme for coming soon webpages"
 homepage = "https://github.com/andresmazzo/gohugo-theme-comingsoon"
-tags = ["cominsoon"]
+tags = ["comingsoon"]
 features = ["singlepage"]
 min_version = "0.1.0"
 
