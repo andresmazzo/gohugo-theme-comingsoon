@@ -3,10 +3,11 @@
 Welcome to the universal coming soon theme to your next project.
 
 #### Features
-- Flexible
 - Multiple templates
 - Countdown Timer
 - Subscription
+- Contact links
+- Easy configuration
 
 ![Image of examples](/images/grid.png)
 
