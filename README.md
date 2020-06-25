@@ -49,6 +49,21 @@ Example: Your css files are in `static/css/`:
   custom_css = ["css/overrides.css"]
 ```
 
+### Social links
+Set your social contact links. We implement [simple icons](https://simpleicons.org)
+```
+[params]
+  ..
+
+  [[params.socials]]
+  icon = "facebook"
+  url = "https://facebook.com/fakeuser"
+  [[params.socials]]
+  icon = "instagram"
+  url = "https://instagram.com/fakeuser"
+```
+
+
 ### Subscription
 Do you know formspree.io? We support it to send the email of the subscription form. Visit the Formspree site to get the "action" link and add it to your config file.
 ```

@@ -1,0 +1,8 @@
+<div class="socialbox-container">
+  {{ range . }}
+    {{ $url := printf "https://unpkg.com/simple-icons@v2/icons/%s.svg" .icon }}
+    <a href="{{ .url }}">
+      <img class="social-icon" src="{{ $url }}" />
+    </a>
+  {{ end }}
+</div>

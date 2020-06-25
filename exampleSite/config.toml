@@ -10,3 +10,9 @@ themesDir = "../../.."
   launch_date = "2021-01-01T00:00:00Z"
   phone = "11 1234-5678"
   mail = "admin@andresmazzo.com"
+
+  [[social]]
+  icon = "instagram"
+  url = "https://instagram.com/andresmazzo"
+  icon = "500px"
+  url = "https://500px.com/andresmazzo"
