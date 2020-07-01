@@ -35,6 +35,7 @@ You may need to delete the line: themesDir = "../.."
 - simple
 - split-view
 - minimal-left
+- clean
 
 See [screenshot pics](/docs/pics)!
 
