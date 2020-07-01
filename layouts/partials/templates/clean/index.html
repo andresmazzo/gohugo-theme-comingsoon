@@ -1,0 +1,18 @@
+<div>
+    {{ if .Params.image }}
+      <img class="background" src="{{ .Params.image | absURL }}" />
+    {{ end }}
+    <main class="centered">
+      {{ if .Params.countdown_timer }}
+        {{ partial "components/countdown/countdown.html" .Site.Params.launch_date }}
+      {{ end }}
+
+      {{ with .Params.subtitle }}
+        <h4 class="subtitle">{{.}}</h4>
+      {{ end }}
+
+      {{ if .Params.subscription }}
+        {{ partial "components/subscription/subscription.html" (dict "mail" .Site.Params.mail "button" "Suscribite!" ) }}
+      {{ end }}
+    </main>
+</div>
