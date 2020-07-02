@@ -4,7 +4,7 @@
     {{ end }}
     <main class="centered">
       {{ if .Params.countdown_timer }}
-        {{ partial "components/countdown/countdown.html" .Site.Params.launch_date }}
+        {{ partial "components/countdown/countdown.html" (dict "date" .Site.Params.launch_date) }}
       {{ end }}
 
       {{ with .Params.subtitle }}

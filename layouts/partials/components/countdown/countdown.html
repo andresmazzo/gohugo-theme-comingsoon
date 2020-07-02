@@ -1,9 +1,41 @@
 
-{{ $date := time . }}
+{{ $mydate := time .date }}
 
-<div class="countdown-timer" data-launch-date="{{ $date.Unix }}">
-  {{ partial "components/countdown/timebox.html" (dict "unit" "days" "number" "00") }}
-  {{ partial "components/countdown/timebox.html" (dict "unit" "hours" "number" "00") }}
-  {{ partial "components/countdown/timebox.html" (dict "unit" "minutes" "number" "00") }}
-  {{ partial "components/countdown/timebox.html" (dict "unit" "seconds" "number" "00") }}
+{{ $dd := "days" }}
+{{ if .min_unit }}
+    {{ $dd = "d" }}
+{{ end }}
+{{ if .min_unit_dd }}
+    {{ $dd = .min_unit_dd }}
+{{ end }}
+
+{{ $hh := "hours" }}
+{{ if .min_unit }}
+    {{ $hh = "h" }}
+{{ end }}
+{{ if .min_unit_hh }}
+    {{ $hh = .min_unit_hh }}
+{{ end }}
+
+{{ $mm := "minutes" }}
+{{ if .min_unit }}
+    {{ $mm = "m" }}
+{{ end }}
+{{ if .min_unit_mm }}
+    {{ $mm = .min_unit_mm }}
+{{ end }}
+
+{{ $ss := "seconds" }}
+{{ if .min_unit }}
+    {{ $ss = "s" }}
+{{ end }}
+{{ if .min_unit_ss }}
+    {{ $ss = .min_unit_ss }}
+{{ end }}
+
+<div class="countdown-timer" data-launch-date="{{ $mydate.Unix }}">
+  {{ partial "components/countdown/timebox.html" (dict "name" "days" "unit" $dd "number" "00") }}
+  {{ partial "components/countdown/timebox.html" (dict "name" "hours" "unit" $hh "number" "00") }}
+  {{ partial "components/countdown/timebox.html" (dict "name" "minutes" "unit" $mm "number" "00") }}
+  {{ partial "components/countdown/timebox.html" (dict "name" "seconds" "unit" $ss "number" "00") }}
 </div>
