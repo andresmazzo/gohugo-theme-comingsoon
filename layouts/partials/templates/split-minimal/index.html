@@ -1,0 +1,31 @@
+<div>
+  {{ if .Params.image }}
+    <img class="background" src="{{ .Params.image | absURL }}" />
+  {{ end }}
+  <div class="centered split-container">
+    <div class="split left">
+        <div class="centered box">
+          {{ partial "components/countdown/countdown.html" (dict "date" .Site.Params.launch_date "min_unit" true "min_unit_dd" "days") }}
+          <div class="box-line-container">
+            <div class="box-line left"></div>
+            <div class="space"></div>
+            <div class="box-line right"></div>
+          </div>
+          <p class="timer_text">{{.Params.after_countdown}}</p>
+        </div>
+    </div>
+    <div class="split right">
+      <div class="centered box">
+        <h1 class="title">{{.Params.Title}}</h1>
+        <h2 class="subtitle">{{.Params.Subtitle}}</h2>
+        <span class="line"></span>
+        <p class="label">{{.Params.soon}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <img class="logo" src="{{ .Site.Params.logo | absURL }}" />
+
+    {{ partial "components/socialbox.html" .Site.Params.socials }}
+  </div>
+</div>
