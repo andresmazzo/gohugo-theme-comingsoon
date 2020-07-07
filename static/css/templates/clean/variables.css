@@ -4,4 +4,11 @@
   --text-color: #fff;
   --background-color: #000;
   --font-family: 'Work Sans', sans-serif;
+
+  --h1-size: 4rem;
+  --h4-size: 1.7rem;
+  --h5-size: 1.2rem;
+  --p-size: 1.1rem;
+
+  --countdown-timer-number-size: 4.5rem;
 }

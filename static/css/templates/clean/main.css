@@ -18,9 +18,6 @@ main {
   border: none;
 }
 
-.countdown-timer .timebox-container .timebox-number {
-  font-size: 4.5rem;
-}
 .countdown-timer .timebox-container .timebox-unit {
   padding: 1rem 0;
 }

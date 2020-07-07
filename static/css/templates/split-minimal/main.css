@@ -1,7 +1,6 @@
 
 /* --- Main Global Overrides --- */
 h1 {
-    font-size: 3rem;
     margin: 1rem 0;
 }
 
@@ -20,11 +19,9 @@ h1 {
   padding: 0;
 }
 .countdown-timer .timebox-container .timebox-number {
-  font-size: 1.2rem;
   font-weight: bold;
 }
 .countdown-timer .timebox-container .timebox-unit {
-  font-size: 1.2rem;
   font-weight: normal;
 }
 .countdown-timer .timebox-container.days {
@@ -32,7 +29,7 @@ h1 {
   position: relative;
 }
 .countdown-timer .timebox-container.days .timebox-number {
-  font-size: 13em;
+  font-size: var(--countdown-timer-days-number-size);
   line-height: 1;
 }
 .countdown-timer .timebox-container.days .timebox-unit {
@@ -40,12 +37,6 @@ h1 {
   top: 15%;
   right: 6%;
   font-weight: bold;
-}
-
-.timer_text {
-  text-align: center;
-  margin-top: 3rem;
-  opacity: 0.9;
 }
 
 /* --- Custom generic styles --- */
@@ -63,12 +54,14 @@ h1 {
 /* Control the left side */
 .split.left {
   left: 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.9);
+  border-right: 1px solid var(--vertical-line-color);
+  color: var(--left-color);
 }
 
 /* Control the right side */
 .split.right {
   right: 0;
+  color: var(--right-color);
 }
 
 
@@ -89,7 +82,7 @@ h1 {
 }
 
 .bottom .logo {
-  height: 70px;
+  height: var(--logo-height);
   display: block;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -111,21 +104,23 @@ h1 {
   padding-left: 3rem;
 }
 
-.box > * {
+/* ----- Right ----- */
+.split.right .box > * {
   display: block;
+  color: var(--right-color);
 }
 
-.box .line {
+.split.right .box .line {
   display: inline-block;
   vertical-align: middle;
   margin-top: -2px;
   width: 30px;
   height: 1px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid var(--right-color);
 }
-.box .label {
-  background-color: #fff;
-  color: #000;
+.split.right .box .label {
+  background-color: var(--right-label-background-color);
+  color: var(--right-label-color);
   display: inline-block;
   padding: 5px 10px;
   font-weight: bold;
@@ -133,22 +128,23 @@ h1 {
   text-transform: uppercase;
   margin: 0;
 }
-.box .title {
-  font-size: 3rem;
+.split.right .box .title {
+  font-size: var(--right-title-size);
   text-transform: uppercase;
   margin: 0 0 0 5px;
 }
-.box .subtitle {
-  font-size: 2rem;
+.split.right .box .subtitle {
+  font-size: var(--right-subtitle-size);
   font-weight: bold;
   width: 50%;
   text-transform: uppercase;
-  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  border-left: 4px solid var(--right-color);
   padding: 0 0.5rem;
   margin: 0 0 1rem 10px;
   line-height: 0.9;
 }
 
+/* ----- Left side ----- */
 .left .box-line-container {
   height: 70px;
   width: 80%;
@@ -157,25 +153,31 @@ h1 {
   display: block;
   position: relative;
 }
-
 .left .box-line-container .box-line {
   display: inline-block;
   width: 20%;
   height: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid var(--left-line-color);
 }
 .left .box-line-container .box-line.left {
   position: absolute;
   left: 0;
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid var(--left-line-color);
 }
 .left .box-line-container .box-line.right {
   position: absolute;
   right: 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid var(--left-line-color);
 }
 .left .box-line-container .space {
   display: inline-block;
   width: 35%;
   height: 50px;
+}
+
+.left .timer-text {
+  color: var(--left-timer-text-color);
+  text-align: center;
+  margin-top: 3rem;
+  opacity: 0.9;
 }

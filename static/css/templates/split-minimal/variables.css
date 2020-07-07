@@ -5,8 +5,26 @@
   --background-color: #eee;
   --font-family: 'Work Sans', sans-serif;
 
-  --left-side-color: #000;
-  --left-side-background-color: #999;
-  --right-side-color: #333;
-  --right-side-background-color: #eee;
+  --h1-size: 3rem;
+  --h4-size: 1.7rem;
+  --h5-size: 1.2rem;
+  --p-size: 1.1rem;
+
+  --countdown-timer-number-size: 1.2rem;
+  --countdown-timer-unit-size: 1.2rem;
+  --countdown-timer-days-number-size: 13rem;
+
+  --logo-height: 70px;
+
+  --vertical-line-color: var(--text-color);
+  --left-color: var(--text-color);
+  --right-color: var(--text-color);
+
+  --left-line-color: var(--left-color);
+  --left-timer-text-color: var(--left-color);
+
+  --right-title-size: 3rem;
+  --right-subtitle-size: 2rem;
+  --right-label-background-color: var(--right-color);
+  --right-label-color: #000;
 }
